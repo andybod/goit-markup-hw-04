@@ -129,9 +129,12 @@ body {
   color: var(--hover-color);
 }
 .header__contacts {
+  display: flex;
   margin-left: auto;
 }
 .header__contacts-contact {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: 1.42;
   letter-spacing: 0.02em;
@@ -158,7 +161,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1600рх;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
 }
 .hero__title {
   margin: 0 auto;
@@ -257,7 +262,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .teams__content {
-  padding: 30px 0 16px 0;
+  padding: 30px 0;
   text-align: center;
 }
 .teams__img {
@@ -277,8 +282,8 @@ body {
 }
 .teams__social {
   display: flex;
-  padding: 0 32px;
-  margin-bottom: 30px;
+  justify-content: center;
+  margin-top: 16px;
   gap: 10px;
 }
 .teams__list {
@@ -342,8 +347,11 @@ body {
 }
 .footer__container {
   display: flex;
-  gap: 70px;
+  /* gap: 70px; */
   align-items: baseline;
+}
+.footer__content {
+  margin-right: 70px;
 }
 .footer__logo span {
   color: var(--main-bright-color);
